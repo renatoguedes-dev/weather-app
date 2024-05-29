@@ -1,0 +1,171 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: space-between;
+    position: relative;
+    background-color: skyblue;
+}
+
+form {
+    margin-bottom: 2rem;
+    background-color: rgb(0, 0, 0, 0.6);
+    position: relative;
+    display: flex;
+}
+
+.container {
+    position: relative;
+    color: white;
+    text-align: center;
+}
+
+form,
+.container {
+    border-radius: 10px;
+    border: none;
+    padding: 2rem;
+}
+
+#loading,
+#not-found {
+    display: none;
+    position: absolute;
+    top: 120%;
+    right: 35%;
+    color: black;
+    font-size: 24px;
+}
+
+h1.app-title {
+    margin: 2rem 0 1rem;
+    color: white;
+}
+
+input {
+    width: 200px;
+    height: 30px;
+    padding: 1em 0.5em;
+    font-size: 16px;
+}
+
+.search-button,
+.temp-button {
+    margin-left: 0.5rem;
+    padding: 0.6rem;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: lightslategray;
+    cursor: pointer;
+}
+
+.temp-button {
+    width: 37.2px;
+}
+
+.min-max-temp {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.min-max-temp > * {
+    padding: 0.4rem 0.6rem;
+    border-radius: 0.2rem;
+    font-size: 24px;
+}
+
+h1 {
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 24px;
+    margin-bottom: 0.5rem;
+}
+
+img.condition-icon {
+    height: 100px;
+}
+
+.created-by {
+    margin-top: 2rem;
+    background-color: #1f2937;
+    color: #e5e7eb;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    width: 100%;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 415px) {
+    body {
+        text-align: center;
+    }
+
+    form {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    #not-found {
+        right: 23%;
+    }
+
+    div.buttons {
+        margin-top: 1rem;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    .search-button {
+        margin-left: 0;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    p,
+    .min-max-temp > *,
+    .created-by {
+        font-size: 16px;
+    }
+
+    div.buttons button {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 176px) {
+    form {
+        padding: 1rem 0.4rem;
+        border-radius: 5px;
+    }
+
+    #not-found {
+        right: 4%;
+    }
+
+    .min-max-temp {
+        flex-direction: column;
+    }
+}
