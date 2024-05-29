@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Weather App</title>
+    <script defer src="mainf4db4e4f610ce679747c.js"></script></head>
+    <body>
+        <h1 class="app-title">Weather App</h1>
+
+        <form>
+            <input
+                type="text"
+                name="search-input"
+                id="search-input"
+                minlength="1"
+                placeholder="enter city name"
+                required
+            />
+            <div class="buttons">
+                <button class="search-button">Search</button>
+                <button class="temp-button celsius">°C</button>
+            </div>
+            <div id="loading">Loading...</div>
+            <div id="not-found">City not found.</div>
+        </form>
+
+        <div class="container">
+            <div class="main-info">
+                <div class="location">
+                    <h1></h1>
+                </div>
+                <div class="temperature">
+                    <div class="current-temp">
+                        <p></p>
+                    </div>
+                    <div class="min-max-temp">
+                        <div class="min-temp"></div>
+                        <div class="max-temp"></div>
+                    </div>
+                    <div class="condition">
+                        <h1 class="condition-text"></h1>
+                        <img class="condition-icon" />
+                    </div>
+                </div>
+                <div class="temp-feels-like">
+                    <h1></h1>
+                    <p class="feels-like-temp"></p>
+                </div>
+                <div class="chance-to-rain">
+                    <h1></h1>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <footer class="created-by">Created by Renato Guedes</footer>
+    </body>
+</html>
